@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/chat.react.redux/static/css/main.260654ee.chunk.css",
+    "main.js": "/chat.react.redux/static/js/main.f4a5ccda.chunk.js",
+    "main.js.map": "/chat.react.redux/static/js/main.f4a5ccda.chunk.js.map",
+    "runtime~main.js": "/chat.react.redux/static/js/runtime~main.c6ff287d.js",
+    "runtime~main.js.map": "/chat.react.redux/static/js/runtime~main.c6ff287d.js.map",
+    "static/js/2.5edd2d4f.chunk.js": "/chat.react.redux/static/js/2.5edd2d4f.chunk.js",
+    "static/js/2.5edd2d4f.chunk.js.map": "/chat.react.redux/static/js/2.5edd2d4f.chunk.js.map",
+    "index.html": "/chat.react.redux/index.html",
+    "precache-manifest.221e0d4e27e3adb1683b51843c0fcc80.js": "/chat.react.redux/precache-manifest.221e0d4e27e3adb1683b51843c0fcc80.js",
+    "service-worker.js": "/chat.react.redux/service-worker.js",
+    "static/css/main.260654ee.chunk.css.map": "/chat.react.redux/static/css/main.260654ee.chunk.css.map",
+    "static/media/jake.jpg": "/chat.react.redux/static/media/jake.f9ad12e2.jpg",
+    "static/media/logo.png": "/chat.react.redux/static/media/logo.330b7d78.png"
+  }
+}
