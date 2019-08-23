@@ -1,68 +1,118 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Estructura Directorios
 
-In the project directory, you can run:
+|- `components`
+|  |
+|  |-- header
+|  |   |
+|  |   |-- index.js
+|  |   |-- style.css
+|  |   |-- img
+|  |
+|  |-- img
+|  |
+|  |-- menu
+|  |   |
+|  |   |-- index.js
+|  |   |-- style.css
+|  |   |
+|  |   |-- img
+|  |   |
+|  |   |-- items
+|  |   |   |
+|  |   |   |-- index.js
+|  |   |   |-- style.css  
+|  |   |
+|  |   
+|  |-- main
+|  |   |
+|  |   |-- index.js
+|  |   |-- style.css
+|  |   |
+|  |   |-- enviar
+|  |   |   |-- index.js
+|  |   |   |-- style.css
+|  |   |
+|  |   |-- mensajes
+|  |   |   |
+|  |   |   |-- index.js
+|  |   |   |-- style.css
+|
+|
+|- `redux`
+|   |
+|   |-- store.js
+|   |
+|   |-- action
+|   |   |
+|   |   |-- carga.mensajes.js
+|   |   |-- registra.mensajes.js
+|   |
+|   |-- reducers
+|   |   |
+|   |   |-- index.js
+|   |   |-- mensaje.reducer.js
+|
+|
+|- `config`
+|   |
+|   |-- constantes.js
+|
+|- `data`
+|   |
+|   |-- items.js
+|   |-- favoritos.js
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `Componentes`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En la carpeta componentes contiene todo lo relacionado con la vista,
+se divio en las diferentes secciones que tiene la aplicación de manera
+de desacoplar las vistas y tener un mejor manejo.
+    
+    Cada sección de la aplicacion tiene su carpeta con un nombre referente a lo que
+    es el componente.
+    Cada una de esta carpeta contine su archivo js y style, ademas de una carpeta de imganes
+    que solo se utilizaran en ese componente.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### `redux`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Continen la configuración de redux que son los action, reducer y store.
 
-### `npm run eject`
+    En la carpeta action se creo una carpeta que contine todas las acciones para manejar
+    las operaciones de mensajes. Contiene los archivo js para las operaciones que se realizaron
+    para este ejercio que son cargar los datos y registrar el mensaje.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    En la carpeta reducers contiene el reducer para la operaciones de mensaje.
+    Se encuentra un archivo index.js en donde se combina todos los reducers.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    El archivo store.js se encuentra a raiz de la carpeta, para hacer referente que es el parte de la 
+    configuración de redux.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `config`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contiene archivos de configuración que se pueden utilizar en todo la aplicación.
+En este caso hay un archivo de constantes donde tienen el type de las actions.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `data`
+Contiene archivos de datos , para hacer las pruebas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### `Page GitHub`
+[https://quiquebd96.github.io/chat.react.redux/](https://quiquebd96.github.io/chat.react.redux/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+P.D.
+Para el consumo de link 
+[https://huc2m17au1.execute-api.us-west-2.amazonaws.com/production/messages](https://huc2m17au1.execute-api.us-west-2.amazonaws.com/production/messages)
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+De lado del servicio no se tiene activo el CORS, por lo tanto guarde la información de que entrega , 
+para despues ponerlo en archivo js y mostrarla en la vista, que se encuentra en la carpeta data, se llama items.js.
+Pero esta comentada la petición en el action de carga.mensajes.js , se uso axios para la consulta.

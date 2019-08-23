@@ -9,8 +9,8 @@ import { ClipLoader } from 'react-spinners';
 import Mensajes from './mensajes';
 import Enviar from './enviar';
 import './style.css'
-import {cargaMensajes} from '../../redux/actions/carga.mensajes';
-import { registroMensaje } from '../../redux/actions/registrar.mensaje';
+import {cargaMensajes} from '../../redux/actions/mensajes/carga.mensajes';
+
 
 
 
@@ -81,4 +81,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect(mapStateToProps,{ cargaMensajes,registroMensaje })(Main);
+export default connect(mapStateToProps,{ cargaMensajes })(Main);

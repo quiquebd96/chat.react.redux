@@ -1,16 +1,18 @@
+import CONSTANTES from '../../../config/constantes';
+
 export function registroMensaje(mensaje){
     return async (dispatch) => {
         try{
 
             dispatch({
-                type: 'GUARDAR_MENSAJE',
+                type: CONSTANTES.GUARDAR_MENSAJE,
                 mensaje: mensaje
             });
 
         }catch(e){
 
             dispatch({
-                type: 'ERROR',
+                type: CONSTANTES.ERROR,
                 error: 'Error al registrar el mensaje.'
             });
 

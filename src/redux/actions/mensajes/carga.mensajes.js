@@ -1,12 +1,13 @@
 //import axios from 'axios';
-import items from '../../data/items';
+import items from '../../../data/items';
+import CONSTANTES from '../../../config/constantes';
 
 export function cargaMensajes(){
     return async (dispatch) => {
         try {
             
             dispatch({
-                type: 'CARGA_MENSAJES'
+                type: CONSTANTES.CARGA_MENSAJES
             });
             
             /* Access-Control-Allow-Origin
@@ -15,7 +16,7 @@ export function cargaMensajes(){
             
             setTimeout(function(){
                 dispatch({
-                    type: 'CARGA_MENSAJES_OK',
+                    type: CONSTANTES.CARGA_MENSAJES_OK,
                     //mensajes: response.data
                     mensajes: items
                 });
@@ -25,7 +26,7 @@ export function cargaMensajes(){
 
         }catch (e) {
             dispatch({
-                type: 'ERROR',
+                type: CONSTANTES.ERROR,
                 error: 'Error al cargar los datos.'
             });
         }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { registroMensaje } from '../../../redux/actions/registrar.mensaje';
+import { registroMensaje } from '../../../redux/actions/mensajes/registrar.mensaje';
 import './style.css'
 
 import finn from '../../img/finn.png'
