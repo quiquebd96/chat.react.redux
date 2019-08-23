@@ -2,77 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Estructura Directorios
 
-├── actions
-│   ├── comment.actions.js
-│   └── post.actions.js
-├── components
-│   ├── App.js
-│   ├── Comment.js
-│   ├── Comments.js
-│   └── Post.js
-├── 
+├── components <br>
+│   ├── header<br>
+├── redux<br>
+|   ├── store.js<br>
+│   ├── actions<br>
+|   ├── reducers<br>
+|<br>
+├── config<br>
+|<br>
+├── data<br>
 
-|- `components` <br>
-|  |<br>
-|  |-- header<br>
-|  |   |<br>
-|  |   |-- index.js<br>
-|  |   |-- style.css<br>
-|  |   |-- img<br>
-|  |<br>
-|  |-- img<br>
-|  |<br>
-|  |-- menu<br>
-|  |   |<br>
-|  |   |-- index.js<br>
-|  |   |-- style.css<br>
-|  |   |<br>
-|  |   |-- img<br>
-|  |   |<br>
-|  |   |-- items<br>
-|  |   |   |<br>
-|  |   |   |-- index.js<br>
-|  |   |   |-- style.css  <br>
-|  |   |<br>
-|  |   <br>
-|  |-- main<br>
-|  |   |<br>
-|  |   |-- index.js<br>
-|  |   |-- style.css<br>
-|  |   |<br>
-|  |   |-- enviar<br>
-|  |   |   |-- index.js<br>
-|  |   |   |-- style.css<br>
-|  |   |<br>
-|  |   |-- mensajes<br>
-|  |   |   |<br>
-|  |   |   |-- index.js<br>
-|  |   |   |-- style.css<br>
-|<br>
-|<br>
-|- `redux`<br>
-|   |<br>
-|   |-- store.js<br>
-|   |<br>
-|   |-- action<br>
-|   |   |<br>
-|   |   |-- carga.mensajes.js<br>
-|   |   |-- registra.mensajes.js<br>
-|   |<br>
-|   |-- reducers<br>
-|   |   |<br>
-|   |   |-- index.js<br>
-|   |   |-- mensaje.reducer.js<br>
-|<br>
-|<br>
-|- `config`<br>
-|   |<br>
-|   |-- constantes.js<br>
-|<br>
-|- `data`<br>
-|   |<br>
-|   |-- items.js<br>
-|   |-- favoritos.js<br>
 
 
 
@@ -116,12 +56,11 @@ Contiene archivos de datos , para hacer las pruebas.
 
 
 ### `Page GitHub`
-[https://quiquebd96.github.io/chat.react.redux/](https://quiquebd96.github.io/chat.react.redux/)
+[Page](https://quiquebd96.github.io/chat.react.redux/)
 
 
 P.D.
-Para el consumo de link 
-[https://huc2m17au1.execute-api.us-west-2.amazonaws.com/production/messages](https://huc2m17au1.execute-api.us-west-2.amazonaws.com/production/messages)
+Para el consumo de [link](https://huc2m17au1.execute-api.us-west-2.amazonaws.com/production/messages)
 
 De lado del servicio no se tiene activo el CORS, por lo tanto guarde la información de que entrega , 
 para despues ponerlo en archivo js y mostrarla en la vista, que se encuentra en la carpeta data, se llama items.js.
