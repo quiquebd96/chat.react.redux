@@ -1,0 +1,178 @@
+header{
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    height: 50px;
+    background: var(--azul);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contentDiv{
+    width: 100%;
+    height: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.divIcons{
+    text-align: center;
+    padding-top: 1% !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.imagenUsuario{
+    height: 35px;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.contentIcon{
+    width: 30px;
+    opacity: 0.5;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.contentBotons{
+    display: flex;
+}
+
+.contentIcon > i{
+    line-height: 1.3;
+}
+
+
+.boton{
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+    width: 33%;
+    font-size: 18;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    height: 80%;
+    font-size: 18;
+}
+
+.boton.active{
+    background: rgba(22,33,53, 0.1) !important;
+}
+
+.paddingTop4{
+    padding-top: 4%;
+
+}
+
+.text{
+    line-height: 3;
+    color:#ffffff;
+    text-align: center;
+}
+
+.divBotones{
+    padding-right: 5px;
+}
+
+
+.flex-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-grid-column{
+    flex-direction: column;
+}
+
+.flex-grid > div {
+    flex: 1;
+}
+
+.flex3{
+    flex: 3 !important;
+}
+
+
+.font14{
+    font-size: 14;
+}
+
+
+
+@media (min-width: 1281px) {
+  
+   
+    
+}
+ 
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .text{
+        line-height: 3;
+        padding-left: 10px;
+        color:#ffffff;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .text{
+        padding-top: 1%;
+        line-height: normal;
+        padding-left: 10px;
+        color:#ffffff;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .text{
+        line-height: normal;
+        padding-left: 20px;
+        color:#ffffff;
+        text-align: center;
+    }
+
+    .divBotones{
+        display: none;
+    }
+    .contentIcon{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .text{
+        line-height: normal;
+        color:#ffffff;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .divBotones{
+        display: none;
+    }
+    .contentIcon{
+        display: none;
+    }
+
+}

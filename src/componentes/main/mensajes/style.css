@@ -1,0 +1,61 @@
+.textAlingCenter{
+    text-align: center;
+}
+
+.fechaMensajeText{
+    color: #797979;
+    font-size: 14;
+}
+
+.usuarioMensajeText{
+    color: #000000;
+    font-size: 16;
+}
+
+.mensajeDes {
+    flex: 10 !important;
+}
+
+.imagenMensajeUsuario{
+    max-width: 50px;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.mensajeDescripcionText{
+    color: #000000;
+    font-size: 15;
+}
+
+.mensajeDescripcion{
+    margin-top: 15px;
+}
+
+.flex-gridM {
+    display: flex;
+}
+  
+.flex-gridM-column{
+    flex-direction: column;
+}
+
+.flex-gridM > div {
+    flex: 1;
+    margin: 0 20px 20px 0;
+    padding: 15px;
+}
+
+
+@media (max-width: 1000px) {
+    
+    .flex-gridM {
+      flex-direction: column;
+    }
+  
+    .flex-gridM > div {
+      margin-right: 0;
+    }
+
+}
+
+

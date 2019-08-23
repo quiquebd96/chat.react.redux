@@ -1,0 +1,58 @@
+.Main{
+    flex: 1;
+    display: flex;
+}
+
+.contentMain{
+    padding: 25px;
+    width: 100%;
+}
+
+.contentMensajes{
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0px 10%;
+    height: 430px;
+}
+
+.l{
+    position: fixed;
+    left: 10%;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+
+@media (min-width: 1281px) {
+  
+    
+}
+ 
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+}

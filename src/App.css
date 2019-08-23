@@ -1,0 +1,13 @@
+.content{
+  display: flex;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.marginRight-5{
+  margin-right: 5px;
+}
+
+.marginRight-20{
+  margin-right: 20px;
+}

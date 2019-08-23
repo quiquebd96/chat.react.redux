@@ -1,0 +1,16 @@
+
+
+.sizeIcon{
+    font-size: 12px;
+}
+
+.imagenUsuarioMenu{
+    max-width: 25px;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.spanNumero{
+    padding: 0;
+    display: block;
+}
