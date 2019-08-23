@@ -13,7 +13,7 @@ ul span {
 
 
 
-ul.contenItema {
+.contenItema {
     position: relative;
     display: block;
     padding: 12px 5px 12px 15px;
@@ -23,8 +23,8 @@ ul.contenItema {
     display: flex;
 }
 
-ul.contenItema:hover,
-ul.contenItema.active {
+.contenItema:hover,
+.contenItema.active {
     background: white;
 }
 
